@@ -27,6 +27,19 @@ class Button{
    stroke(0);
    strokeWeight(4);
    rect(x, y, w, h, 30);
+   
+   textAlign(CENTER, CENTER);
+   if (mouseX >  x-w/2 && mouseX < x-w/2 && mouseY > y-h/2 && mouseY < y+h/2) {
+     fill(normal);
+   } else{
+     fill(highlight);
+   }
+   textSize(w/4);
+   text(text, x, y);
+   
+
+   } 
+   
   
   
 
