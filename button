@@ -3,7 +3,7 @@ class Button{
   boolean clicked;
   color highlight, normal;
   String text;
-  
+  PImage img;
   
   Button(String t, int _x, int _y, int _w, int _h, color norm, color high) {
     x = _x;
@@ -33,6 +33,13 @@ class Button{
      fill(normal);
    } else{
      fill(highlight);
+   }
+   if (img == null) {
+     textSize(w/4);
+     text(text, x, y);
+     
+   } else {
+     clicked = false;
    }
    textSize(w/4);
    text(text, x, y);
