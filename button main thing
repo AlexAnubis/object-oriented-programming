@@ -1,17 +1,10 @@
-//// Instance Variables
-//int x, y, w, h;
-//boolean clicked;
-//color highlight, normal;
-//String text;
 
 class Button {
-  // Instance Variables
   int x, y, w, h;
   boolean clicked;
   color highlight, normal;
   String text;
 
-  //Constructor
   Button(String t, int _x, int _y, int _w, int _h, color norm, color high) {
     x = _x;
     y = _y;
@@ -23,7 +16,6 @@ class Button {
     clicked = false;
   }
 
-  // Behavioural Functions
   void show() {
 
     drawButton();
